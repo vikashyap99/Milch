@@ -1,13 +1,8 @@
-import React, { Component } from 'react';
+import React from "react";
 
-class MainComponent extends Component {
-    render() {
-        return (
-            <div>
-                <h1>Milch</h1>
-            </div>
-        );
-    }
+function Main() {
+  return (
+   <div></div>
+  );
 }
-
-export default MainComponent;
+export default Main;
