@@ -1,0 +1,11 @@
+.h1{
+color: rgb(0, 26, 34);
+  font-size: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 5;
+  font-family: "Candara", sans-serif;
+  position: absolute;
+  top: 6%;
+  left: 43%;
+}
