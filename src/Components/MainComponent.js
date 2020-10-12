@@ -1,7 +1,11 @@
 import React from "react";
+import HeaderComponents from './HeaderComponent'
+
 function Main() {
   return (
-   <div></div>
+   <div>
+     
+   </div>
   );
 }
 export default Main;

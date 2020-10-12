@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import {Navbar,Nav, NavDropdown} from 'react-bootstrap'
+import {Route} from 'react-router-dom'
+import SignIn from './Auth/SignIn'
 import './Header.css'
 class HeaderComponent extends Component {
     render() {
         return (
             <div>
                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="#home">Milch</Navbar.Brand>
+  <Navbar.Brand href="/home">Milch</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
@@ -21,9 +23,9 @@ class HeaderComponent extends Component {
       </NavDropdown>
     </Nav>
     <Nav>
-      <Nav.Link href="#deets">SignUp</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
-        LogIn
+      <Nav.Link href="/signup">SignUp</Nav.Link>
+      <Nav.Link eventKey={2} href="signup">
+          LogIn
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>
