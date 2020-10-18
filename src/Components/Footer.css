@@ -1,0 +1,22 @@
+
+  
+  .main-footer{
+    
+    font-size: 150%;
+    color: white;
+    background-color:  #343A40;
+    opacity: 0.8;
+    padding: 1%;
+    margin-top: auto;
+    text-align: center;
+   
+  }
+
+  .social-font{
+      color: white;
+      align-content: stretch;
+  }
+
+  .social-font Nav{
+    align-items: flex-end;
+  }

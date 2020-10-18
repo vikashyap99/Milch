@@ -1,5 +1,6 @@
 .h1{
 color: rgb(0, 26, 34);
+  opacity: 0.7;
   font-size: 100px;
   text-align: center;
   text-transform: uppercase;

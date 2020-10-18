@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "@reach/router";
+
+
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -84,7 +86,7 @@ const SignUp = () => {
         </button>
         <p className="text-center my-3">
           Already have an account?{" "}
-          <Link to="/" className="text-blue-500 hover:text-blue-600">
+          <Link to="/signIn" className="text-blue-500 hover:text-blue-600">
             Sign in here
           </Link>
         </p>

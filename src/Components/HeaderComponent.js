@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Navbar,Nav, NavDropdown} from 'react-bootstrap'
-import {Route} from 'react-router-dom'
-import SignIn from './Auth/SignIn'
+
 import './Header.css'
 class HeaderComponent extends Component {
     render() {
@@ -23,8 +22,8 @@ class HeaderComponent extends Component {
       </NavDropdown>
     </Nav>
     <Nav>
-      <Nav.Link href="/signup">SignUp</Nav.Link>
-      <Nav.Link eventKey={2} href="signup">
+      <Nav.Link href="/signUp">SignUp</Nav.Link>
+      <Nav.Link eventKey={2} href="signIn">
           LogIn
       </Nav.Link>
     </Nav>

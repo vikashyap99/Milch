@@ -1,10 +1,8 @@
 import React from "react";
-import HeaderComponents from './HeaderComponent'
-
 function Main() {
   return (
    <div>
-     
+    <h1>Milch </h1>
    </div>
   );
 }
