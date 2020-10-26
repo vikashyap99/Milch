@@ -4,7 +4,8 @@ import * as firebase from 'firebase/app';
 import 'firebase/auth';
 import firebaseConfig from './firebase';
 import {Link} from 'react-router-dom'
-import DairyHome from '../dairyHome'
+import DairyHome from '../CustomerPages/dairyHome'
+import Customer from '../CustomerPages/Customer'
 import '../style.css'
 
 
@@ -29,7 +30,7 @@ class SignIn extends Component {
     
       {
         user 
-          ? <DairyHome user={user} signOut={signOut}  />
+          ? <Customer user={user} signOut={signOut}  />
           : <div>
               <div class="form">
       
@@ -44,7 +45,7 @@ class SignIn extends Component {
         </div>
         <input type="text" name="" value="" placeholder="Username" required />
         <input type="password" name="" value="" placeholder="Password" required />
-        <button type="submit" name="button">Login</button>
+        <button  type="submit" name="button">Login</button>
         <p class="options">Not Registered? <a href="/#">Create an Account</a></p>
       </form>
       

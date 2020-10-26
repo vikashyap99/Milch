@@ -34,6 +34,8 @@ class FooterComponent extends Component {
                             <NavLink href='/'><i class="fab fa-instagram"></i></NavLink>
                             <NavLink href='/'><i class="fab fa-twitter"></i></NavLink>
                             <NavLink href='/'><i class="fab fa-linkedin"></i></NavLink>
+                            <NavLink href='/'><i class="fab fa-github"></i></NavLink>
+
                             </div>
                            
                         

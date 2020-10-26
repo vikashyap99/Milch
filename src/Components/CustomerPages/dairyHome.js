@@ -1,29 +1,21 @@
 import React, { Component } from 'react';
 import './dairyHome.css'
-import {Nav,NavLink} from 'reactstrap'
-import {Link} from 'react-router-dom'
+import {Nav,NavLink,Button} from 'reactstrap'
+import {Link,Switch,Route} from 'react-router-dom'
+import SideNav from './sidebar'
+
 
 class dairyHome extends Component {
     render() {
 
         const user = this.props.user
+        
 
         return (
             <div>
               <div className='container'> 
 
-              <div className='sidenav'>
-                      <div className='col'>
-                      
-                        <NavLink href="/home">Home</NavLink>
-                        <NavLink href="#features">Add Member</NavLink>
-                        <NavLink href="#pricing">Pricing</NavLink>
-                        <NavLink href="#pricing">Report</NavLink>
-                        
-                        
-                      </div>
-                  </div>
-
+                 
                   <div className='row'>
                   <div className='col'>
                   <header >
@@ -31,7 +23,7 @@ class dairyHome extends Component {
     
                                 {
                                   user 
-                                    ? <div className='profile'><img src={user.photoURL} className="App-logo" alt="logo" /><p>Hello, {user.displayName}</p></div>
+                                    ? <div className='profile'> <img src={user.photoURL} className="App-logo" alt="logo" />  <p>Hello, {user.displayName}</p></div>
                                     : <div>
                                         <div class="form">
                               </div>
@@ -39,7 +31,7 @@ class dairyHome extends Component {
                                 }
                                 {
                                   user
-                                    ? <button onClick={this.props.signOut}>Sign out</button>
+                                    ? <Button className = 'secondary' onClick={this.props.signOut}>Sign out</Button>
                                     : <div></div>
                                 }
                   </header>
